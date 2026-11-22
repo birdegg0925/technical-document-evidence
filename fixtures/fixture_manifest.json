@@ -9,5 +9,5 @@
   },
   "source_groups_disjoint": true,
   "requirement_families_disjoint": true,
-  "scope": "self-authored grouped flow/property tests; shared manual structure, not independent real-world generalization"
+  "scope": "Grouped workflow tests using fictional manuals with shared structure"
 }

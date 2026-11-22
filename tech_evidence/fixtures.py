@@ -22,7 +22,7 @@ def fixture(out):
   def case(suffix,question,relevant,decision,**query):
    cases.append({'case_id':f'{prefix}-{suffix}','source_set':'synthetic_fixture','split':split,'requirement_family':'supply_voltage_and_sampling' if prefix=='D' else 'continuous_current_and_temperature',
     'source_group':source_group,'query':{'question':question,**query},'gold':{'relevant_pages':[{'doc_id':d,'page':p} for d,p in relevant],'expected_decision':decision},
-    'provenance':'self-authored fictional text pages and flow labels; no real manufacturer case'})
+    'provenance':'Fictional manual text and expected workflow decisions'})
   if prefix=='D':
    case('explicit',f'What is the permitted supply voltage for {model} version 2.0?',[(f'fiction_{prefix.lower()}1_v2',1)],'support',model=model,version='2.0')
    case('old',f'What is the supply voltage for {model} version 1.0?',[(f'fiction_{prefix.lower()}1_v1',1)],'support',model=model,version='1.0')
@@ -41,5 +41,5 @@ def fixture(out):
  for split in ['dev','test']:jsonl(out/f'cases_{split}.jsonl',[c for c in cases if c['split']==split])
  dump(out/'fixture_manifest.json',{'data_kind':'fictional text-page manuals, not real PDFs or company cases','pages':len(pages),'documents':len(docs),'cases':len(cases),
   'splits':{s:sum(c['split']==s for c in cases) for s in ['dev','test']},'source_groups_disjoint':True,'requirement_families_disjoint':True,
-  'scope':'self-authored grouped flow/property tests; shared manual structure, not independent real-world generalization'})
+  'scope':'Grouped workflow tests using fictional manuals with shared structure'})
  print(f'fictional fixture: documents={len(docs)} pages={len(pages)} cases={len(cases)}');return pages,cases

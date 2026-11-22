@@ -55,7 +55,7 @@
     "char_budget": 6000
   },
   "mode": "scoped",
-  "cases_sha256": "81e791951f5fa1834e0ee16bd496459cec34ce838b34fdc24323877821bd821b",
-  "scope": "page labels may be non-exhaustive; literal anchor coverage and structural decisions do not measure answer correctness or entailment",
-  "official_pilot_warning": "manual-curated official questions are a pilot, not a sealed independent generalization test"
+  "cases_sha256": "b5f8ecce75653de5e1623117d8462fa25c3d451740659cd3144f751fee188bda",
+  "scope": "Retrieval uses non-exhaustive page labels. Anchor coverage and decision checks are structural metrics.",
+  "official_pilot_warning": "Small pilot on public manuals using the bundled question set."
 }

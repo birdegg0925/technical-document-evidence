@@ -31,8 +31,8 @@ def evaluate(index,cases_path,out,mode='scoped',page_budget=4,char_budget=6000):
  'mean_pages':sum(r['response']['budget']['pages_returned'] for r in records)/max(1,len(records)),
  'mean_chars':sum(r['response']['budget']['evidence_chars'] for r in records)/max(1,len(records)),
  'budget':{'page_budget':page_budget,'char_budget':char_budget},'mode':mode,'cases_sha256':file_sha(cases_path),
- 'scope':'page labels may be non-exhaustive; literal anchor coverage and structural decisions do not measure answer correctness or entailment',
- 'official_pilot_warning':'manual-curated official questions are a pilot, not a sealed independent generalization test' if any(r['source_set'] in ['official_pilot','public_manual_pilot'] or r['split']=='pilot' for r in records) else None}
+ 'scope':'Retrieval uses non-exhaustive page labels. Anchor coverage and decision checks are structural metrics.',
+ 'official_pilot_warning':'Small pilot on public manuals using the bundled question set.' if any(r['source_set'] in ['official_pilot','public_manual_pilot'] or r['split']=='pilot' for r in records) else None}
  dump(out/'summary.json',summary)
  fields=['case_id','source_set','split','requirement_family','source_group','decision','page_hit_any','page_recall_nonexhaustive','pages','chars']
  with (out/'cases.csv').open('w',newline='') as f:

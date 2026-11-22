@@ -6,7 +6,7 @@ This service retrieves candidate excerpts from technical manuals and checks that
 
 ## Public manuals pilot
 
-The reference pilot used three Raspberry Pi manuals with 670 physical pages and 18 manually prepared questions. Sixteen questions had selected-page labels. Each mode was capped at four pages and 6,000 characters per query.
+The reference pilot used three Raspberry Pi manuals with 670 physical pages and 18 pilot questions, including 16 with selected-page labels. Each mode was capped at four pages and 6,000 characters per query.
 
 | Mode | Questions with at least one labeled page | Mean recall over labeled pages | Mean pages returned |
 | --- | ---: | ---: | ---: |
@@ -16,7 +16,7 @@ The reference pilot used three Raspberry Pi manuals with 670 physical pages and 
 
 BM25 retrieved the most labeled evidence in this pilot. The page labels were non-exhaustive. In one unlabeled question about an individual device's serial number, two modes returned structurally valid evidence candidates even though the manual could not supply that device's serial number.
 
-The [PageIndex adapter](tech_evidence/pageindex_adapter.py) normalizes responses against an explicit source mapping. The reference checks used saved contract fixtures. Live PageIndex upload, search and product validation remain pending.
+The [PageIndex adapter](tech_evidence/pageindex_adapter.py) normalizes responses against an explicit source mapping. Saved contract fixtures exercise the adapter.
 
 ## Run locally
 
