@@ -1,0 +1,35 @@
+{
+  "_fixture_provenance": "SDK-shaped synthetic contract fixture; not a real PageIndex response",
+  "results": [
+    {
+      "question": "fixture query",
+      "documents": [
+        {
+          "id": "REMOTE_SYNTHETIC_A",
+          "name": "fictional-contract.pdf",
+          "pageNum": 2,
+          "metadata": {},
+          "pages": [
+            {
+              "page": 1,
+              "relevance": 0.9,
+              "read": "text",
+              "text": "SYNTHETIC API CONTRACT. Supply voltage is 3 V."
+            },
+            {
+              "page": 2,
+              "relevance": 0.8,
+              "read": "image",
+              "text": "This placeholder is not accepted as visual verification."
+            }
+          ],
+          "more_pages": false,
+          "failed_pages": []
+        }
+      ]
+    }
+  ],
+  "failed_documents": [],
+  "processing_documents": [],
+  "seconds": null
+}

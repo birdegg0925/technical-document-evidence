@@ -1,0 +1,13 @@
+{
+  "data_kind": "fictional text-page manuals, not real PDFs or company cases",
+  "pages": 14,
+  "documents": 6,
+  "cases": 11,
+  "splits": {
+    "dev": 5,
+    "test": 6
+  },
+  "source_groups_disjoint": true,
+  "requirement_families_disjoint": true,
+  "scope": "self-authored grouped flow/property tests; shared manual structure, not independent real-world generalization"
+}

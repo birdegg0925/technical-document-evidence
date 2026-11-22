@@ -1,0 +1,61 @@
+{
+  "n": 18,
+  "source_sets": [
+    "public_manual_pilot"
+  ],
+  "splits": [
+    "pilot"
+  ],
+  "requirement_families": [
+    "comparison",
+    "cpu_pico2",
+    "cross_page",
+    "flash_pico2",
+    "gpio_board_chip",
+    "mechanical",
+    "memory_pico",
+    "memory_pico2",
+    "missing_instance",
+    "pio_pico",
+    "pio_pico2",
+    "programming",
+    "provenance",
+    "qualifier",
+    "soc_flash",
+    "soc_memory",
+    "soc_peripherals",
+    "unknown_model"
+  ],
+  "source_groups": [
+    "instance_negative",
+    "pico",
+    "pico2",
+    "rp2040",
+    "scope_negative"
+  ],
+  "retrieval": {
+    "labeled_cases": 16,
+    "page_hit_rate_any": 0.8125,
+    "page_recall_nonexhaustive": 0.78125
+  },
+  "anchors": {
+    "literal_anchor_count": 0,
+    "literal_anchors_found": 0,
+    "literal_anchor_coverage": null
+  },
+  "decision": {
+    "labeled_cases": 1,
+    "agreement": 1.0,
+    "potential_over_support_on_labeled_no_answer": 0
+  },
+  "mean_pages": 4.0,
+  "mean_chars": 5592.944444444444,
+  "budget": {
+    "page_budget": 4,
+    "char_budget": 6000
+  },
+  "mode": "bm25",
+  "cases_sha256": "81e791951f5fa1834e0ee16bd496459cec34ce838b34fdc24323877821bd821b",
+  "scope": "page labels may be non-exhaustive; literal anchor coverage and structural decisions do not measure answer correctness or entailment",
+  "official_pilot_warning": "manual-curated official questions are a pilot, not a sealed independent generalization test"
+}

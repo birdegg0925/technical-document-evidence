@@ -1,0 +1,19 @@
+{
+  "backend": "contract_fixture",
+  "executed": false,
+  "documents": [
+    {
+      "remote_doc_id": "REMOTE_SYNTHETIC_A",
+      "doc_id": "SYNTHETIC_API_A",
+      "pdf_sha256": null,
+      "physical_pages": 2,
+      "mapping_provenance": "operator_supplied_unverified",
+      "metadata": {
+        "model": "FICT-API",
+        "version": "1.0",
+        "source_kind": "synthetic",
+        "source_url": "fixture://api-contract"
+      }
+    }
+  ]
+}
